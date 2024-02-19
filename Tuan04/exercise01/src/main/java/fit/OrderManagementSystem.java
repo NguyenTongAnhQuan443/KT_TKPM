@@ -1,9 +1,4 @@
-package fit;/*
- * @description:
- * @author: Bao Thong
- * @date: 14/03/2025
- * @version: 1.0
- */
+package fit;
 
 // OrderState.java (State Pattern)
 // ShippingStrategy.java (Strategy Pattern)
