@@ -1,0 +1,15 @@
+services:
+  app1:
+    image: alpine
+    command: sh -c "while true; do sleep 30; done"
+    networks:
+      - custom_net
+
+  app2:
+    image: alpine
+    command: sh -c "while true; do sleep 30; done"
+    networks:
+      - custom_net
+
+networks:
+  custom_net:
