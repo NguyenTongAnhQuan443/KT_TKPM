@@ -44,67 +44,67 @@
 ### 6. `docker compose restart`
 > Khởi động lại các container trong Compose.
 
-![Ảnh minh chứng](./images/docker-compose-restart.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/6.png)
 
 ---
 
 ### 7. `docker compose logs -f`
 > Xem logs trực tiếp từ các container đang chạy.
 
-![Ảnh minh chứng](./images/docker-compose-logs-f.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/7.png)
 
 ---
 
 ### 8. `docker compose build`
 > Build lại các image theo định nghĩa trong `docker-compose.yml`.
 
-![Ảnh minh chứng](./images/docker-compose-build.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/8.png)
 
 ---
 
 ### 9. `docker compose exec <service_name> <command>`
 > Chạy một lệnh trong container đang chạy (ví dụ: bash, ls, ...).
 
-![Ảnh minh chứng](./images/docker-compose-exec.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/9.png)
 
 ---
 
 ### 10. `docker compose down -v`
 > Dừng và xóa container, network, **và volume**.
 
-![Ảnh minh chứng](./images/docker-compose-down-v.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/10.png)
 
 ---
 
 ### 11. `docker compose run <service_name> <command>`
 > Chạy một lệnh trong container mới (không cần container đang chạy).
 
-![Ảnh minh chứng](./images/docker-compose-run.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/11.png)
 
 ---
 
 ### 12. `docker compose stop <service_name>`
 > Tạm dừng container của một service cụ thể.
 
-![Ảnh minh chứng](./images/docker-compose-stop.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/12.png)
 
 ---
 
 ### 13. `docker compose rm <service_name>`
 > Xóa container của một service cụ thể (sau khi đã stop hoặc down).
 
-![Ảnh minh chứng](./images/docker-compose-rm.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/13.png)
 
 ---
 
 ### 14. `docker compose config`
 > Kiểm tra cấu hình Compose hiện tại (sau khi merge từ file yml).
 
-![Ảnh minh chứng](./images/docker-compose-config.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/14.png)
 
 ---
 
 ### 15. `docker compose up -d --build`
 > Build lại image và khởi động dịch vụ ở chế độ nền.
 
-![Ảnh minh chứng](./images/docker-compose-up-d-build.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/15.png)
