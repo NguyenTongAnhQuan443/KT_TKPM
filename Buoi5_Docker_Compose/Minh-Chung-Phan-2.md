@@ -54,7 +54,8 @@
 
 **Minh chứng:**
 
-![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-4.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-4-1.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-4-2.png)
 
 ---
 
@@ -65,7 +66,7 @@
 
 **Minh chứng:**
 
-![Bài 5](./images/bai5-redis.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-5.png)
 
 ---
 
@@ -76,7 +77,7 @@
 
 **Minh chứng:**
 
-![Bài 6](./images/bai6-wordpress.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-6-1.png)
 
 ---
 
@@ -87,8 +88,8 @@
 
 **Minh chứng:**
 
-![Bài 7](./images/bai7-mongodb.png)
-
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-7-1.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-7-2.png)
 ---
 
 ### ✅ Bài 8: Kết nối nhiều dịch vụ với Docker Compose
@@ -165,7 +166,8 @@
 
 **Minh chứng:**
 
-![Bài 14](./images/bai14-network.png)
+![Buoi5_Docker_Compose/MinhChung/image.png](MinhChung/2-14.png)
+
 
 ---
 
