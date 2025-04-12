@@ -1,8 +1,7 @@
+// File: resources/application.yml
 spring:
-  application:
-    name: product-service
   datasource:
-    url: jdbc:postgresql://localhost:5433/productdb
+    url: jdbc:postgresql://localhost:5434/orderdb
     username: postgres
     password: postgres
   jpa:
@@ -14,4 +13,4 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 server:
-  port: 8081
+  port: 8082
