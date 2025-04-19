@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: payment
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/payments/**
+        - id: inventory
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/inventory/**
+        - id: shipping
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/shipping/**
