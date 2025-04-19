@@ -16,8 +16,8 @@ import java.util.concurrent.CompletableFuture;
 public class InventoryController {
 
     @GetMapping("/deduct")
-    @CircuitBreaker(name = "serviceCB", fallbackMethod = "fallback")
-    @Retry(name = "serviceCB")
+    @CircuitBreaker(name = "inventoryService", fallbackMethod = "fallback")
+    @Retry(name = "inventoryService")
     @TimeLimiter(name = "serviceCB")
     public CompletableFuture<String> deductStock(@RequestParam String productId) {
         return CompletableFuture.supplyAsync(() -> {

@@ -16,9 +16,9 @@ import java.util.concurrent.CompletableFuture;
 public class ShippingController {
 
     @GetMapping("/ship")
-    @CircuitBreaker(name = "serviceCB", fallbackMethod = "fallback")
-    @Retry(name = "serviceCB")
-    @TimeLimiter(name = "serviceCB")
+    @CircuitBreaker(name = "shippingService", fallbackMethod = "fallback")
+    @Retry(name = "shippingService")
+    @TimeLimiter(name = "shippingService")
     public CompletableFuture<String> startShipping(@RequestParam String orderId) {
         return CompletableFuture.supplyAsync(() -> {
             simulateNetworkLatency();

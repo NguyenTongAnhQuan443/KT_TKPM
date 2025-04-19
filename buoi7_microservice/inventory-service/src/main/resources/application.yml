@@ -7,7 +7,7 @@ spring:
 resilience4j:
   circuitbreaker:
     instances:
-      paymentService:
+      inventoryService:
         registerHealthIndicator: true
         slidingWindowSize: 5
         minimumNumberOfCalls: 5
@@ -16,20 +16,20 @@ resilience4j:
 
   retry:
     instances:
-      paymentService:
+      inventoryService:
         maxAttempts: 3
         waitDuration: 2s
 
   ratelimiter:
     instances:
-      paymentService:
+      inventoryService:
         limitForPeriod: 10
         limitRefreshPeriod: 1s
 
   timelimiter:
     instances:
-      paymentService:
-        timeoutDuration: 3s
+      inventoryService:
+        timeoutDuration: 2s
 
   logging:
     level:

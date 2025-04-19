@@ -16,13 +16,13 @@ import java.util.concurrent.CompletableFuture;
 public class PaymentController {
 
     @GetMapping("/confirm")
-    @CircuitBreaker(name = "serviceCB", fallbackMethod = "fallback")
-    @Retry(name = "serviceCB")
-    @TimeLimiter(name = "serviceCB")
+    @CircuitBreaker(name = "paymentService", fallbackMethod = "fallback")
+    @Retry(name = "paymentService")
+    @TimeLimiter(name = "paymentService")
     public CompletableFuture<String> confirmPayment(@RequestParam String orderId) {
         return CompletableFuture.supplyAsync(() -> {
             simulateNetworkLatency(); // giả lập lỗi
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.5) {
                 throw new RuntimeException("Lỗi khi xác nhận thanh toán!");
             }
             return "Đã thanh toán đơn hàng: " + orderId;
@@ -35,7 +35,7 @@ public class PaymentController {
 
     private void simulateNetworkLatency() {
         try {
-            Thread.sleep(3000); // > timeout 2s → trigger TimeLimiter
+            Thread.sleep(1000); // > timeout 3s → trigger TimeLimiter
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
