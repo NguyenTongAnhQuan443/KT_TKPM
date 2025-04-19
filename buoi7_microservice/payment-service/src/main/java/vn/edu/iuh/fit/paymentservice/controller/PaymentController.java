@@ -35,7 +35,7 @@ public class PaymentController {
 
     private void simulateNetworkLatency() {
         try {
-            Thread.sleep(1000); // > timeout 3s → trigger TimeLimiter
+            Thread.sleep(4000); // > timeout 3s → trigger TimeLimiter
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
